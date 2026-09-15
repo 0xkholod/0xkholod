@@ -31,22 +31,22 @@
   <g>
     <rect x="16" y="95" width="110" height="42" rx="9" fill="#ffffff05" stroke="#334155"/>
     <text x="71" y="115" text-anchor="middle" fill="#f8fafc" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="600">569d</text>
-    <text x="71" y="130" text-anchor="middle" fill="#94a3b8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1">STREAK</text>
+    <text x="71" y="130" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="700" letter-spacing=".9">STREAK</text>
   </g>
   <g>
     <rect x="142" y="95" width="110" height="42" rx="9" fill="#ffffff05" stroke="#334155"/>
     <text x="197" y="115" text-anchor="middle" fill="#f8fafc" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="600">629h</text>
-    <text x="197" y="130" text-anchor="middle" fill="#94a3b8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1">TYPING</text>
+    <text x="197" y="130" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="700" letter-spacing=".9">TYPING</text>
   </g>
   <g>
     <rect x="268" y="95" width="110" height="42" rx="9" fill="#ffffff05" stroke="#334155"/>
     <text x="323" y="115" text-anchor="middle" fill="#f8fafc" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="600">32.9K</text>
-    <text x="323" y="130" text-anchor="middle" fill="#94a3b8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1">TESTS</text>
+    <text x="323" y="130" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="700" letter-spacing=".9">TESTS</text>
   </g>
   <g>
     <rect x="394" y="95" width="110" height="42" rx="9" fill="#e2b71409" stroke="#e2b714" stroke-opacity=".32"/>
-    <text x="449" y="115" text-anchor="middle" fill="#e2b714" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="650">191 WPM</text>
-    <text x="449" y="130" text-anchor="middle" fill="#94a3b8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1">PB</text>
+    <text x="449" y="115" text-anchor="middle" fill="#e2b714" font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="650">191 WPM</text>
+    <text x="449" y="130" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="750" letter-spacing="1">PB</text>
   </g>
-  <circle cx="492" cy="22" r="3.5" fill="#72edf2"><animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/></circle>
+  <circle cx="260" cy="25" r="3.5" fill="#72edf2"><animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/></circle>
 </svg>

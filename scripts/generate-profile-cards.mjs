@@ -336,24 +336,24 @@ function renderMonkeytypeCard(profile) {
   <g>
     <rect x="16" y="95" width="110" height="42" rx="9" fill="#ffffff05" stroke="${colors.border}"/>
     <text x="71" y="115" text-anchor="middle" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="600">${profile.streak}d</text>
-    <text x="71" y="130" text-anchor="middle" fill="${colors.muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1">STREAK</text>
+    <text x="71" y="130" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="700" letter-spacing=".9">STREAK</text>
   </g>
   <g>
     <rect x="142" y="95" width="110" height="42" rx="9" fill="#ffffff05" stroke="${colors.border}"/>
     <text x="197" y="115" text-anchor="middle" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="600">${formatHours(profile.timeTyping)}</text>
-    <text x="197" y="130" text-anchor="middle" fill="${colors.muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1">TYPING</text>
+    <text x="197" y="130" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="700" letter-spacing=".9">TYPING</text>
   </g>
   <g>
     <rect x="268" y="95" width="110" height="42" rx="9" fill="#ffffff05" stroke="${colors.border}"/>
     <text x="323" y="115" text-anchor="middle" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="600">${formatCompact(profile.completedTests)}</text>
-    <text x="323" y="130" text-anchor="middle" fill="${colors.muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1">TESTS</text>
+    <text x="323" y="130" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="700" letter-spacing=".9">TESTS</text>
   </g>
   <g>
     <rect x="394" y="95" width="110" height="42" rx="9" fill="#e2b71409" stroke="${colors.monkeytype}" stroke-opacity=".32"/>
-    <text x="449" y="115" text-anchor="middle" fill="${colors.monkeytype}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="650">${Math.round(profile.wpm)} WPM</text>
-    <text x="449" y="130" text-anchor="middle" fill="${colors.muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1">PB</text>
+    <text x="449" y="115" text-anchor="middle" fill="${colors.monkeytype}" font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="650">${Math.round(profile.wpm)} WPM</text>
+    <text x="449" y="130" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="750" letter-spacing="1">PB</text>
   </g>
-  <circle cx="492" cy="22" r="3.5" fill="${colors.cyan}"><animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/></circle>`;
+  <circle cx="260" cy="25" r="3.5" fill="${colors.cyan}"><animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/></circle>`;
 
   return cardShell({
     id: "monkeytype",
@@ -379,17 +379,17 @@ function renderHackTheBoxCard(profile) {
     <g transform="translate(193 108)" fill="none" stroke="${colors.htb}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
       <rect x="0" y="0" width="18" height="12" rx="2"/><path d="M6 16h6M9 12v4M4 5l2 2-2 2m5 0h4"/>
     </g>
-    <text x="239" y="122.5" text-anchor="middle" fill="${colors.htb}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="650">${escapeXml(profile.machineCount)}</text>
+    <text x="239" y="117.5" dominant-baseline="middle" text-anchor="middle" fill="${colors.htb}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="650">${escapeXml(profile.machineCount)}</text>
   </g>
   <g>
     <title>Pro Labs completed: ${profile.proLabCount}</title>
-    <rect x="280" y="97" width="62" height="40" rx="9" fill="#72edf209" stroke="${colors.cyan}" stroke-opacity=".28"/>
-    <g transform="translate(288 107)" fill="none" stroke="${colors.cyan}" stroke-width="1.7" stroke-linejoin="round">
+    <rect x="283" y="97" width="58" height="40" rx="9" fill="#72edf209" stroke="${colors.cyan}" stroke-opacity=".28"/>
+    <g transform="translate(291 107)" fill="none" stroke="${colors.cyan}" stroke-width="1.7" stroke-linejoin="round">
       <path d="m9 0 9 5v10l-9 5-9-5V5Zm0 0v10m9-5-9 5-9-5m9 5v10"/>
     </g>
-    <text x="326" y="122.5" text-anchor="middle" fill="${colors.cyan}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="650">${profile.proLabCount}</text>
+    <text x="324" y="117.5" dominant-baseline="middle" text-anchor="middle" fill="${colors.cyan}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="650">${profile.proLabCount}</text>
   </g>
-  <circle cx="492" cy="22" r="3.5" fill="${colors.htb}"><animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/></circle>`;
+  <circle cx="260" cy="25" r="3.5" fill="${colors.htb}"><animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/></circle>`;
 
   return cardShell({
     id: "hackthebox",

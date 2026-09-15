@@ -2,6 +2,14 @@
   <img src="assets/banner.svg" alt="0xkholod — SysAdmin and offensive security" width="100%" />
 </p>
 
+<br />
+
+## `whoami`
+
+<h3 align="center">Systems Administrator moving deeper into offensive security.</h3>
+
+<p align="center">Grounded in Windows, Linux, and Active Directory — learning how systems establish trust, then testing where that trust breaks.</p>
+
 <p align="center">
   <a href="https://www.0xkholod.com"><img src="assets/links/portfolio.svg" alt="Portfolio" width="30%" /></a>
   &nbsp;
@@ -15,24 +23,16 @@
   <a href="https://monkeytype.com/profile/0xkholod"><img src="assets/cards/monkeytype.svg" alt="0xkholod on Monkeytype" width="49%" /></a>
 </p>
 
-## `whoami`
-
-<h3 align="center">Systems Administrator moving deeper into offensive security.</h3>
-
-<p align="center">Grounded in Windows, Linux, and Active Directory — learning how systems establish trust, then testing where that trust breaks.</p>
-
 ## `credentials`
 
 <p align="center">
-  <a href="https://www.credly.com/badges/1bacf91c-938a-4d0c-84ad-382d27bd2365/public_url"><img src="https://images.credly.com/images/e63aa507-b974-4e67-bae6-1e425f6e2a99/image.png" alt="HTB Certified Penetration Testing Specialist — verified credential" width="22%" /></a>
+  <a href="https://www.credly.com/badges/1bacf91c-938a-4d0c-84ad-382d27bd2365/public_url"><img src="https://images.credly.com/images/e63aa507-b974-4e67-bae6-1e425f6e2a99/image.png" alt="HTB Certified Penetration Testing Specialist — verified credential" width="18%" /></a>
 </p>
 
 ## `projects`
 
 <p align="center">
-  <a href="https://docs.0xkholod.com"><img src="assets/projects/field-manual.svg?v=2" alt="Field Manual — docs.0xkholod.com" width="43%" /></a>
-  &nbsp;
-  <a href="https://www.0xkholod.com"><img src="assets/projects/portfolio.svg?v=2" alt="Portfolio — www.0xkholod.com" width="43%" /></a>
+  <a href="https://github.com/0xkholod/field-manual"><img src="assets/projects/field-manual.svg?v=3" alt="Field Manual repository" width="43%" /></a>
 </p>
 
 <br />

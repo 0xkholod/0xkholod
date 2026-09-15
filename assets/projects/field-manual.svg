@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="420" height="86" viewBox="0 0 420 86" role="img" aria-labelledby="title desc">
   <title id="title">Field Manual</title>
-  <desc id="desc">Technical notes and research at docs.0xkholod.com</desc>
+  <desc id="desc">Open the source repository for the 0xkholod Field Manual</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#172033"/><stop offset="1" stop-color="#101827"/></linearGradient>
     <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(355 18) rotate(150) scale(220 110)"><stop stop-color="#72edf2" stop-opacity=".18"/><stop offset="1" stop-color="#72edf2" stop-opacity="0"/></radialGradient>
@@ -11,6 +11,6 @@
     <path d="M2 2h12c4 0 7 3 7 7v24c0-4-3-7-7-7H2Zm38 0H28c-4 0-7 3-7 7v24c0-4 3-7 7-7h12Z"/>
   </g>
   <text x="92" y="39" fill="#f8fafc" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="600">Field Manual</text>
-  <text x="92" y="59" fill="#72edf2" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" letter-spacing="1.1">DOCS.0XKHOLOD.COM</text>
+  <text x="92" y="59" fill="#72edf2" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" letter-spacing=".8">GITHUB.COM/0XKHOLOD/FIELD-MANUAL</text>
   <path d="m382 37 7 6-7 6" fill="none" stroke="#72edf2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
