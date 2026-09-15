@@ -2,13 +2,15 @@
   <img src="assets/banner.svg" alt="0xkholod — SysAdmin and offensive security" width="100%" />
 </p>
 
-<br />
+
 
 ## `whoami`
 
 <h3 align="center">Systems Administrator moving deeper into offensive security.</h3>
 
-<p align="center">Grounded in Windows, Linux, and Active Directory — learning how systems establish trust, then testing where that trust breaks.</p>
+<p align="center">Grounded in Windows, Linux, and Active Directory. Learning how systems establish trust, then testing where that trust breaks.</p>
+
+<br>
 
 <p align="center">
   <a href="https://www.0xkholod.com"><img src="assets/links/portfolio.svg" alt="Portfolio" width="30%" /></a>
