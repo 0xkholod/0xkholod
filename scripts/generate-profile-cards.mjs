@@ -302,7 +302,7 @@ function renderAvatar({ id, image, x, y, size, accent, initials = "0X" }) {
 }
 
 function cardShell({ id, accent, label, icon, body }) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="460" height="190" viewBox="0 0 460 190" role="img" aria-labelledby="${id}-title ${id}-description">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="520" height="154" viewBox="0 0 520 154" role="img" aria-labelledby="${id}-title ${id}-description">
   <title id="${id}-title">${escapeXml(label)}</title>
   <desc id="${id}-description">Live public profile statistics for 0xkholod</desc>
   <defs>
@@ -310,18 +310,18 @@ function cardShell({ id, accent, label, icon, body }) {
       <stop offset="0" stop-color="${colors.surface}"/>
       <stop offset="1" stop-color="${colors.background}"/>
     </linearGradient>
-    <radialGradient id="${id}-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(395 30) rotate(135) scale(175 120)">
+    <radialGradient id="${id}-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(450 24) rotate(145) scale(190 100)">
       <stop stop-color="${accent}" stop-opacity=".18"/>
       <stop offset="1" stop-color="${accent}" stop-opacity="0"/>
     </radialGradient>
     <filter id="${id}-shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#020617" flood-opacity=".45"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="#020617" flood-opacity=".45"/>
     </filter>
   </defs>
-  <rect x="5" y="5" width="450" height="180" rx="20" fill="url(#${id}-background)" stroke="${colors.border}" stroke-width="2" filter="url(#${id}-shadow)"/>
-  <rect x="5" y="5" width="450" height="180" rx="20" fill="url(#${id}-glow)"/>
-  <g transform="translate(164 15) scale(.58)">${icon}</g>
-  <text x="253" y="35" text-anchor="middle" fill="${accent}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" letter-spacing="1.8">${escapeXml(label)}</text>
+  <rect x="5" y="5" width="510" height="144" rx="18" fill="url(#${id}-background)" stroke="${colors.border}" stroke-width="2" filter="url(#${id}-shadow)"/>
+  <rect x="5" y="5" width="510" height="144" rx="18" fill="url(#${id}-glow)"/>
+  <g transform="translate(365 16) scale(.55)">${icon}</g>
+  <text x="455" y="34" text-anchor="middle" fill="${accent}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="600" letter-spacing="1.8">${escapeXml(label)}</text>
   ${body}
 </svg>`;
 }
@@ -329,31 +329,31 @@ function cardShell({ id, accent, label, icon, body }) {
 function renderMonkeytypeCard(profile) {
   const icon = `<path d="M4 12h36v25H4z" fill="none" stroke="${colors.monkeytype}" stroke-width="2"/>
     <path d="M10 19h3m4 0h3m4 0h3m4 0h3M10 25h3m4 0h3m4 0h3m4 0h3M14 31h20" stroke="${colors.monkeytype}" stroke-width="2.2" stroke-linecap="round"/>`;
-  const body = `${renderAvatar({ id: "monkeytype", image: profile.avatarDataUrl, x: 30, y: 56, size: 54, accent: colors.monkeytype })}
-  <text x="98" y="77" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="500">${escapeXml(profile.name)}</text>
-  <rect x="98" y="88" width="118" height="22" rx="11" fill="#22d3ee16" stroke="${colors.cyan}" stroke-opacity=".58"/>
-  <text x="157" y="102.5" text-anchor="middle" fill="${colors.cyan}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="650" letter-spacing=".55">${escapeXml(profile.badge)}</text>
+  const body = `${renderAvatar({ id: "monkeytype", image: profile.avatarDataUrl, x: 20, y: 18, size: 50, accent: colors.monkeytype })}
+  <text x="82" y="40" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="21" font-weight="500">${escapeXml(profile.name)}</text>
+  <rect x="82" y="48" width="120" height="21" rx="10.5" fill="#22d3ee16" stroke="${colors.cyan}" stroke-opacity=".58"/>
+  <text x="142" y="62" text-anchor="middle" fill="${colors.cyan}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="650" letter-spacing=".5">${escapeXml(profile.badge)}</text>
   <g>
-    <rect x="17" y="136" width="102" height="35" rx="9" fill="#ffffff05" stroke="${colors.border}"/>
-    <text x="68" y="151" text-anchor="middle" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="550">${profile.streak}d</text>
-    <text x="68" y="164" text-anchor="middle" fill="${colors.muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="7" letter-spacing="1">STREAK</text>
+    <rect x="16" y="95" width="110" height="42" rx="9" fill="#ffffff05" stroke="${colors.border}"/>
+    <text x="71" y="115" text-anchor="middle" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="600">${profile.streak}d</text>
+    <text x="71" y="130" text-anchor="middle" fill="${colors.muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1">STREAK</text>
   </g>
   <g>
-    <rect x="125" y="136" width="102" height="35" rx="9" fill="#ffffff05" stroke="${colors.border}"/>
-    <text x="176" y="151" text-anchor="middle" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="550">${formatHours(profile.timeTyping)}</text>
-    <text x="176" y="164" text-anchor="middle" fill="${colors.muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="7" letter-spacing="1">TYPING</text>
+    <rect x="142" y="95" width="110" height="42" rx="9" fill="#ffffff05" stroke="${colors.border}"/>
+    <text x="197" y="115" text-anchor="middle" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="600">${formatHours(profile.timeTyping)}</text>
+    <text x="197" y="130" text-anchor="middle" fill="${colors.muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1">TYPING</text>
   </g>
   <g>
-    <rect x="233" y="136" width="102" height="35" rx="9" fill="#ffffff05" stroke="${colors.border}"/>
-    <text x="284" y="151" text-anchor="middle" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="550">${formatCompact(profile.completedTests)}</text>
-    <text x="284" y="164" text-anchor="middle" fill="${colors.muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="7" letter-spacing="1">TESTS</text>
+    <rect x="268" y="95" width="110" height="42" rx="9" fill="#ffffff05" stroke="${colors.border}"/>
+    <text x="323" y="115" text-anchor="middle" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="600">${formatCompact(profile.completedTests)}</text>
+    <text x="323" y="130" text-anchor="middle" fill="${colors.muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1">TESTS</text>
   </g>
   <g>
-    <rect x="341" y="136" width="102" height="35" rx="9" fill="#e2b71409" stroke="${colors.monkeytype}" stroke-opacity=".32"/>
-    <text x="392" y="151" text-anchor="middle" fill="${colors.monkeytype}" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="600">${Math.round(profile.wpm)} WPM</text>
-    <text x="392" y="164" text-anchor="middle" fill="${colors.muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="7" letter-spacing="1">PB</text>
+    <rect x="394" y="95" width="110" height="42" rx="9" fill="#e2b71409" stroke="${colors.monkeytype}" stroke-opacity=".32"/>
+    <text x="449" y="115" text-anchor="middle" fill="${colors.monkeytype}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="650">${Math.round(profile.wpm)} WPM</text>
+    <text x="449" y="130" text-anchor="middle" fill="${colors.muted}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1">PB</text>
   </g>
-  <circle cx="432" cy="24" r="3.5" fill="${colors.cyan}"><animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/></circle>`;
+  <circle cx="492" cy="22" r="3.5" fill="${colors.cyan}"><animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/></circle>`;
 
   return cardShell({
     id: "monkeytype",
@@ -367,29 +367,29 @@ function renderMonkeytypeCard(profile) {
 function renderHackTheBoxCard(profile) {
   const icon = `<path d="M22 3 40 13v21L22 44 4 34V13Z" fill="none" stroke="${colors.htb}" stroke-width="2"/>
     <path d="m22 3 18 10-18 10L4 13m18 10v21" fill="none" stroke="${colors.htb}" stroke-width="2"/>`;
-  const body = `${renderAvatar({ id: "hackthebox", image: profile.avatarDataUrl, x: 30, y: 56, size: 54, accent: colors.htb })}
-  <text x="98" y="77" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="500">${escapeXml(profile.name)}</text>
-  <rect x="98" y="88" width="58" height="22" rx="11" fill="#9fef0012" stroke="${colors.htb}" stroke-opacity=".65"/>
-  <text x="127" y="102.5" text-anchor="middle" fill="${colors.htb}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="650" letter-spacing=".7">${escapeXml(profile.cptsLabel)}</text>
-  <rect x="164" y="88" width="68" height="22" rx="11" fill="#72edf210" stroke="${colors.cyan}" stroke-opacity=".48"/>
-  <text x="198" y="102.5" text-anchor="middle" fill="${colors.cyan}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="650" letter-spacing=".7">${escapeXml(profile.danteLabel)}</text>
+  const body = `${renderAvatar({ id: "hackthebox", image: profile.avatarDataUrl, x: 20, y: 18, size: 50, accent: colors.htb })}
+  <text x="82" y="40" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="21" font-weight="500">${escapeXml(profile.name)}</text>
+  <rect x="82" y="48" width="58" height="21" rx="10.5" fill="#9fef0012" stroke="${colors.htb}" stroke-opacity=".65"/>
+  <text x="111" y="62" text-anchor="middle" fill="${colors.htb}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="650" letter-spacing=".7">${escapeXml(profile.cptsLabel)}</text>
+  <rect x="148" y="48" width="68" height="21" rx="10.5" fill="#72edf210" stroke="${colors.cyan}" stroke-opacity=".48"/>
+  <text x="182" y="62" text-anchor="middle" fill="${colors.cyan}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="650" letter-spacing=".7">${escapeXml(profile.danteLabel)}</text>
   <g>
     <title>Machines owned: ${escapeXml(profile.machineCount)}</title>
-    <rect x="120" y="138" width="92" height="33" rx="9" fill="#9fef000a" stroke="${colors.htb}" stroke-opacity=".32"/>
-    <g transform="translate(137 147)" fill="none" stroke="${colors.htb}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="182" y="97" width="86" height="40" rx="9" fill="#9fef000a" stroke="${colors.htb}" stroke-opacity=".32"/>
+    <g transform="translate(193 108)" fill="none" stroke="${colors.htb}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
       <rect x="0" y="0" width="18" height="12" rx="2"/><path d="M6 16h6M9 12v4M4 5l2 2-2 2m5 0h4"/>
     </g>
-    <text x="182" y="159.5" text-anchor="middle" fill="${colors.htb}" font-family="Inter,Segoe UI,sans-serif" font-size="16" font-weight="600">${escapeXml(profile.machineCount)}</text>
+    <text x="239" y="122.5" text-anchor="middle" fill="${colors.htb}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="650">${escapeXml(profile.machineCount)}</text>
   </g>
   <g>
     <title>Pro Labs completed: ${profile.proLabCount}</title>
-    <rect x="248" y="138" width="92" height="33" rx="9" fill="#72edf209" stroke="${colors.cyan}" stroke-opacity=".28"/>
-    <g transform="translate(264 146)" fill="none" stroke="${colors.cyan}" stroke-width="1.5" stroke-linejoin="round">
+    <rect x="280" y="97" width="62" height="40" rx="9" fill="#72edf209" stroke="${colors.cyan}" stroke-opacity=".28"/>
+    <g transform="translate(288 107)" fill="none" stroke="${colors.cyan}" stroke-width="1.7" stroke-linejoin="round">
       <path d="m9 0 9 5v10l-9 5-9-5V5Zm0 0v10m9-5-9 5-9-5m9 5v10"/>
     </g>
-    <text x="313" y="159.5" text-anchor="middle" fill="${colors.cyan}" font-family="Inter,Segoe UI,sans-serif" font-size="16" font-weight="600">${profile.proLabCount}</text>
+    <text x="326" y="122.5" text-anchor="middle" fill="${colors.cyan}" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="650">${profile.proLabCount}</text>
   </g>
-  <circle cx="432" cy="24" r="3.5" fill="${colors.htb}"><animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/></circle>`;
+  <circle cx="492" cy="22" r="3.5" fill="${colors.htb}"><animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/></circle>`;
 
   return cardShell({
     id: "hackthebox",

@@ -11,9 +11,8 @@
 </p>
 
 <p align="center">
-  <a href="https://profile.hackthebox.com/profile/019e367d-68ab-7287-bd06-ec8449a07adb"><img src="assets/cards/hackthebox.svg" alt="0xkholod on Hack The Box" width="43%" /></a>
-  &nbsp;
-  <a href="https://monkeytype.com/profile/0xkholod"><img src="assets/cards/monkeytype.svg" alt="0xkholod on Monkeytype" width="43%" /></a>
+  <a href="https://profile.hackthebox.com/profile/019e367d-68ab-7287-bd06-ec8449a07adb"><img src="assets/cards/hackthebox.svg" alt="0xkholod on Hack The Box" width="49%" /></a>
+  <a href="https://monkeytype.com/profile/0xkholod"><img src="assets/cards/monkeytype.svg" alt="0xkholod on Monkeytype" width="49%" /></a>
 </p>
 
 ## `whoami`
@@ -25,16 +24,19 @@
 ## `credentials`
 
 <p align="center">
-  <a href="https://www.credly.com/badges/1bacf91c-938a-4d0c-84ad-382d27bd2365/public_url"><img src="assets/credentials/cpts.svg" alt="HTB Certified Penetration Testing Specialist — verified credential" width="34%" /></a>
+  <a href="https://www.credly.com/badges/1bacf91c-938a-4d0c-84ad-382d27bd2365/public_url"><img src="https://images.credly.com/images/e63aa507-b974-4e67-bae6-1e425f6e2a99/image.png" alt="HTB Certified Penetration Testing Specialist — verified credential" width="22%" /></a>
 </p>
 
 ## `projects`
 
 <p align="center">
-  <a href="https://docs.0xkholod.com"><img src="assets/projects/field-manual.svg" alt="Field Manual — docs.0xkholod.com, built with Quartz and deployed on Cloudflare" width="82%" /></a>
-  <br />
-  <a href="https://www.0xkholod.com"><img src="assets/projects/portfolio.svg" alt="Portfolio — www.0xkholod.com, built with Astro and TypeScript and deployed on Cloudflare" width="82%" /></a>
+  <a href="https://docs.0xkholod.com"><img src="assets/projects/field-manual.svg" alt="Field Manual — docs.0xkholod.com" width="43%" /></a>
+  &nbsp;
+  <a href="https://www.0xkholod.com"><img src="assets/projects/portfolio.svg" alt="Portfolio — www.0xkholod.com" width="43%" /></a>
 </p>
+
+<br />
+<br />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/0xkholod/0xkholod/output/pacman-contribution-graph-dark.svg" />
