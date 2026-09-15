@@ -30,9 +30,9 @@
 ## `projects`
 
 <p align="center">
-  <a href="https://docs.0xkholod.com"><img src="assets/projects/field-manual.svg" alt="Field Manual — docs.0xkholod.com" width="43%" /></a>
+  <a href="https://docs.0xkholod.com"><img src="assets/projects/field-manual.svg?v=2" alt="Field Manual — docs.0xkholod.com" width="43%" /></a>
   &nbsp;
-  <a href="https://www.0xkholod.com"><img src="assets/projects/portfolio.svg" alt="Portfolio — www.0xkholod.com" width="43%" /></a>
+  <a href="https://www.0xkholod.com"><img src="assets/projects/portfolio.svg?v=2" alt="Portfolio — www.0xkholod.com" width="43%" /></a>
 </p>
 
 <br />
