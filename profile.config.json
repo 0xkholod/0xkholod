@@ -1,0 +1,20 @@
+{
+  "monkeytype": {
+    "username": "0xkholod",
+    "profileUrl": "https://monkeytype.com/profile/0xkholod",
+    "badgeLabels": {
+      "14": "All Year Long"
+    }
+  },
+  "hackthebox": {
+    "profileId": "019e367d-68ab-7287-bd06-ec8449a07adb",
+    "profileUrl": "https://profile.hackthebox.com/profile/019e367d-68ab-7287-bd06-ec8449a07adb",
+    "fallbackCredentials": [
+      "HTB CPTS",
+      "Dante Pro Lab"
+    ],
+    "fallbackMachineCount": "50+",
+    "fallbackProLabCount": 1,
+    "fallbackAvatarUrl": "https://htb-sso-prod-public-storage.s3.eu-central-1.amazonaws.com/users/cf6c03b6-fd20-4e85-8588-e476fd3bd976-avatar.png"
+  }
+}

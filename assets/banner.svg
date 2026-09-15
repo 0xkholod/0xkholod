@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-labelledby="title description">
+  <title id="title">0xkholod</title>
+  <desc id="description">Systems operations and offensive security</desc>
+  <defs>
+    <linearGradient id="background" x1="40" y1="15" x2="960" y2="245" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172033"/>
+      <stop offset=".55" stop-color="#101827"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="cyan-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(112 130) rotate(12) scale(280 220)">
+      <stop stop-color="#72edf2" stop-opacity=".19"/>
+      <stop offset="1" stop-color="#72edf2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="magenta-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(884 40) rotate(135) scale(330 230)">
+      <stop stop-color="#f472c4" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#f472c4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#94a3b8" stroke-opacity=".055"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="5" y="5" width="990" height="250" rx="28" fill="url(#background)" stroke="#334155" stroke-width="2"/>
+  <rect x="5" y="5" width="990" height="250" rx="28" fill="url(#grid)"/>
+  <rect x="5" y="5" width="990" height="250" rx="28" fill="url(#cyan-glow)"/>
+  <rect x="5" y="5" width="990" height="250" rx="28" fill="url(#magenta-glow)"/>
+
+  <g transform="translate(84 130)" fill="none" stroke="#72edf2" stroke-linecap="round" filter="url(#glow)">
+    <circle r="52" stroke-opacity=".18"/>
+    <circle r="37" stroke="#f472c4" stroke-opacity=".22"/>
+    <path d="M0-33V33M-29-17 29 17M-29 17 29-17" stroke-width="3"/>
+    <path d="m0-33-7 8m7-8 7 8M0 33l-7-8m7 8 7-8M-29-17l11-1m-11 1 5 10M29 17l-11 1m11-1-5-10M-29 17l5-10m-5 10 11-1M29-17l-5 10m5-10-11-1" stroke-width="2"/>
+    <circle cy="-33" r="3.5" fill="#72edf2" stroke="none"/>
+    <circle cx="29" cy="17" r="3.5" fill="#f472c4" stroke="none"/>
+  </g>
+
+  <g opacity=".55" stroke-width="1.2">
+    <path d="M731 44 784 76 837 51 892 89 943 64" fill="none" stroke="#72edf2"/>
+    <path d="M731 44 758 116 820 139 892 89 916 160" fill="none" stroke="#f472c4"/>
+    <path d="m758 116 79-65-17 88 96 21" fill="none" stroke="#64748b"/>
+    <g fill="#72edf2"><circle cx="731" cy="44" r="3"/><circle cx="784" cy="76" r="3"/><circle cx="820" cy="139" r="3"/><circle cx="943" cy="64" r="3"/></g>
+    <g fill="#f472c4"><circle cx="837" cy="51" r="3"/><circle cx="892" cy="89" r="3"/><circle cx="758" cy="116" r="3"/><circle cx="916" cy="160" r="3"/></g>
+  </g>
+
+  <text x="176" y="110" fill="#f8fafc" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="60" font-weight="800" letter-spacing="5">0xKHOLOD</text>
+  <text x="180" y="143" fill="#94a3b8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="3">SYSTEMS OPERATIONS / OFFENSIVE SECURITY</text>
+  <path d="M180 165H651" stroke="#334155"/>
+  <g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="700" letter-spacing="1.5">
+    <rect x="180" y="181" width="143" height="28" rx="14" fill="#72edf20b" stroke="#72edf2" stroke-opacity=".45"/>
+    <text x="201" y="199" fill="#72edf2">ACTIVE DIRECTORY</text>
+    <rect x="335" y="181" width="118" height="28" rx="14" fill="#f472c40b" stroke="#f472c4" stroke-opacity=".45"/>
+    <text x="360" y="199" fill="#f472c4">HTB CPTS</text>
+    <rect x="465" y="181" width="146" height="28" rx="14" fill="#72edf20b" stroke="#72edf2" stroke-opacity=".45"/>
+    <text x="486" y="199" fill="#72edf2">WINDOWS / LINUX</text>
+  </g>
+  <text x="731" y="206" fill="#64748b" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" letter-spacing="1.6">UNDERSTAND THE TRUST</text>
+</svg>

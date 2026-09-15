@@ -1,0 +1,72 @@
+name: Refresh profile assets
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "README.md"
+      - "assets/banner.svg"
+      - "profile.config.json"
+      - "scripts/generate-profile-cards.mjs"
+      - ".github/workflows/profile-assets.yml"
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  cards:
+    name: Generate live profile cards
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Generate first-party SVG cards
+        run: node scripts/generate-profile-cards.mjs
+
+      - name: Commit updated cards
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards/*.svg
+          if git diff --cached --quiet; then
+            echo "Profile cards are already current."
+          else
+            git commit -m "chore: refresh live profile cards"
+            git push
+          fi
+
+  pacman:
+    name: Generate contribution animation
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Generate Pac-Man contribution graph
+        uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          games: pacman
+          player_style: opportunistic
+
+      - name: Publish generated animation
+        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
