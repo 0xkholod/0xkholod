@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="76" viewBox="0 0 240 76" role="img" aria-labelledby="title desc">
+  <title id="title">LinkedIn</title>
+  <desc id="desc">Open the LinkedIn profile of Alejandro Gómez Kholodilov</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#172033"/><stop offset="1" stop-color="#101827"/></linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(200 14) rotate(135) scale(150 90)" gradientUnits="userSpaceOnUse"><stop stop-color="#a78bfa" stop-opacity=".17"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect x="2" y="2" width="236" height="72" rx="16" fill="url(#bg)" stroke="#334155" stroke-width="2"/>
+  <rect x="2" y="2" width="236" height="72" rx="16" fill="url(#glow)"/>
+  <g transform="translate(25 25)" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round">
+    <rect x="2" y="2" width="26" height="26" rx="4"/><path d="M8 12v10M8 8h.01M14 22V12m0 4c0-5 8-6 8 0v6"/>
+  </g>
+  <text x="70" y="34" fill="#f8fafc" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650">LinkedIn</text>
+  <text x="70" y="51" fill="#94a3b8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="8" font-weight="600" letter-spacing="1.2">PROFESSIONAL PROFILE</text>
+</svg>

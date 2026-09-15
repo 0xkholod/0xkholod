@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-labelledby="title description">
   <title id="title">0xkholod</title>
-  <desc id="description">Systems operations and offensive security</desc>
+  <desc id="description">SysAdmin and offensive security</desc>
   <defs>
     <linearGradient id="background" x1="40" y1="15" x2="960" y2="245" gradientUnits="userSpaceOnUse">
       <stop stop-color="#172033"/>
@@ -47,15 +47,13 @@
   </g>
 
   <text x="176" y="110" fill="#f8fafc" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="60" font-weight="800" letter-spacing="5">0xKHOLOD</text>
-  <text x="180" y="143" fill="#94a3b8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="3">SYSTEMS OPERATIONS / OFFENSIVE SECURITY</text>
+  <text x="180" y="143" fill="#94a3b8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="3">SYSADMIN / OFFENSIVE SECURITY</text>
   <path d="M180 165H651" stroke="#334155"/>
   <g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="700" letter-spacing="1.5">
     <rect x="180" y="181" width="143" height="28" rx="14" fill="#72edf20b" stroke="#72edf2" stroke-opacity=".45"/>
     <text x="201" y="199" fill="#72edf2">ACTIVE DIRECTORY</text>
-    <rect x="335" y="181" width="118" height="28" rx="14" fill="#f472c40b" stroke="#f472c4" stroke-opacity=".45"/>
-    <text x="360" y="199" fill="#f472c4">HTB CPTS</text>
-    <rect x="465" y="181" width="146" height="28" rx="14" fill="#72edf20b" stroke="#72edf2" stroke-opacity=".45"/>
-    <text x="486" y="199" fill="#72edf2">WINDOWS / LINUX</text>
+    <rect x="335" y="181" width="146" height="28" rx="14" fill="#f472c40b" stroke="#f472c4" stroke-opacity=".45"/>
+    <text x="356" y="199" fill="#f472c4">WINDOWS / LINUX</text>
   </g>
   <text x="731" y="206" fill="#64748b" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" letter-spacing="1.6">UNDERSTAND THE TRUST</text>
 </svg>
