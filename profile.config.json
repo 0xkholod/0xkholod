@@ -9,9 +9,9 @@
   "hackthebox": {
     "profileId": "019e367d-68ab-7287-bd06-ec8449a07adb",
     "profileUrl": "https://profile.hackthebox.com/profile/019e367d-68ab-7287-bd06-ec8449a07adb",
-    "fallbackCredentials": [
-      "HTB CPTS",
-      "Dante Pro Lab"
+    "featuredCredentials": [
+      "CPTS",
+      "CWES"
     ],
     "fallbackMachineCount": "50+",
     "fallbackProLabCount": 1,

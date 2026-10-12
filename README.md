@@ -29,6 +29,8 @@
 
 <p align="center">
   <a href="https://www.credly.com/badges/1bacf91c-938a-4d0c-84ad-382d27bd2365/public_url"><img src="https://images.credly.com/images/e63aa507-b974-4e67-bae6-1e425f6e2a99/image.png" alt="HTB Certified Penetration Testing Specialist — verified credential" width="18%" /></a>
+  &nbsp;&nbsp;
+  <a href="https://www.credly.com/badges/ccd1f9d0-70e0-403d-9b88-d55894d53cfe/public_url"><img src="assets/credentials/htb-cwes-badge.png" alt="HTB Certified Web Exploitation Specialist — verified credential" width="18%" /></a>
 </p>
 
 ## `projects`

@@ -18,6 +18,10 @@ const colors = {
   cyan: "#72edf2",
   magenta: "#f472c4",
   htb: "#9fef00",
+  cpts: "#a855ed",
+  cptsText: "#c8a0f0",
+  cwes: "#e34d49",
+  cwesText: "#f28b84",
   monkeytype: "#e2b714",
 };
 
@@ -237,13 +241,9 @@ function extractHackTheBoxProfile(html) {
 async function getHackTheBoxProfile() {
   const apiBase = `https://profile.hackthebox.com/api/v1/public/profile/${encodeURIComponent(config.hackthebox.profileId)}`;
   const apiHeaders = { Referer: "https://profile.hackthebox.com/" };
-  const [html, certificationsPayload, achievementsPayload, labsBadgesPayload] =
+  const [html, achievementsPayload, labsBadgesPayload] =
     await Promise.all([
       fetchText(config.hackthebox.profileUrl),
-      fetchJson(
-        `${apiBase}/sections/certificates/internal/certifications`,
-        apiHeaders,
-      ),
       fetchJson(
         `${apiBase}/sections/certificates/internal/achievements`,
         apiHeaders,
@@ -252,7 +252,6 @@ async function getHackTheBoxProfile() {
     ]);
 
   const profile = extractHackTheBoxProfile(html);
-  const certifications = certificationsPayload.data ?? [];
   const achievements = achievementsPayload.data ?? [];
   const machineCategory = (labsBadgesPayload.categories ?? []).find(
     (category) => category.name === "Machine",
@@ -268,17 +267,8 @@ async function getHackTheBoxProfile() {
   const proLabCount = achievements.filter(
     (achievement) => achievement.course?.type === "ProLab",
   ).length;
-  const hasCpts = certifications.some(
-    (certification) => certification.shortcode === "ACADEMY-CPTS-EXAM",
-  );
-  const hasDante = achievements.some(
-    (achievement) => achievement.shortcode === "DANTE",
-  );
-
   return {
     ...profile,
-    cptsLabel: hasCpts ? "CPTS" : profile.credentials[0] ?? "CPTS",
-    danteLabel: hasDante ? "DANTE" : profile.credentials[1] ?? "DANTE",
     machineCount,
     proLabCount,
     avatarDataUrl: await fetchImageDataUrl(profile.avatarUrl),
@@ -365,14 +355,16 @@ function renderMonkeytypeCard(profile) {
 }
 
 function renderHackTheBoxCard(profile) {
+  // Featured credentials are verified separately; HTB's public listing can lag behind issuance.
+  const [cptsLabel, cwesLabel] = config.hackthebox.featuredCredentials;
   const icon = `<path d="M22 3 40 13v21L22 44 4 34V13Z" fill="none" stroke="${colors.htb}" stroke-width="2"/>
     <path d="m22 3 18 10-18 10L4 13m18 10v21" fill="none" stroke="${colors.htb}" stroke-width="2"/>`;
   const body = `${renderAvatar({ id: "hackthebox", image: profile.avatarDataUrl, x: 20, y: 18, size: 50, accent: colors.htb })}
   <text x="82" y="40" fill="${colors.text}" font-family="Inter,Segoe UI,sans-serif" font-size="21" font-weight="500">${escapeXml(profile.name)}</text>
-  <rect x="82" y="48" width="58" height="21" rx="10.5" fill="#9fef0012" stroke="${colors.htb}" stroke-opacity=".65"/>
-  <text x="111" y="62" text-anchor="middle" fill="${colors.htb}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="650" letter-spacing=".7">${escapeXml(profile.cptsLabel)}</text>
-  <rect x="148" y="48" width="68" height="21" rx="10.5" fill="#72edf210" stroke="${colors.cyan}" stroke-opacity=".48"/>
-  <text x="182" y="62" text-anchor="middle" fill="${colors.cyan}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="650" letter-spacing=".7">${escapeXml(profile.danteLabel)}</text>
+  <rect x="82" y="48" width="58" height="21" rx="10.5" fill="${colors.cpts}" fill-opacity=".08" stroke="${colors.cpts}" stroke-opacity=".65"/>
+  <text x="111" y="62" text-anchor="middle" fill="${colors.cptsText}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="650" letter-spacing=".7">${escapeXml(cptsLabel)}</text>
+  <rect x="148" y="48" width="58" height="21" rx="10.5" fill="${colors.cwes}" fill-opacity=".08" stroke="${colors.cwes}" stroke-opacity=".65"/>
+  <text x="177" y="62" text-anchor="middle" fill="${colors.cwesText}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="650" letter-spacing=".7">${escapeXml(cwesLabel)}</text>
   <g>
     <title>Machines owned: ${escapeXml(profile.machineCount)}</title>
     <rect x="182" y="97" width="86" height="40" rx="9" fill="#9fef000a" stroke="${colors.htb}" stroke-opacity=".32"/>
@@ -424,9 +416,6 @@ async function main() {
       : {
           name: "0xkholod",
           country: "Spain",
-          credentials: config.hackthebox.fallbackCredentials,
-          cptsLabel: "CPTS",
-          danteLabel: "DANTE",
           machineCount: config.hackthebox.fallbackMachineCount,
           proLabCount: config.hackthebox.fallbackProLabCount,
           avatarDataUrl: await fetchImageDataUrl(config.hackthebox.fallbackAvatarUrl),
